@@ -3,6 +3,7 @@ package com.example.demo.Entity;
 import org.springframework.data.repository.cdi.Eager;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,6 +16,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "Hotels")
 public class Hotels {
 	
+	@Id
 	private String hotelId;
 	private String name;
 	private String location;
