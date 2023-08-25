@@ -1,0 +1,13 @@
+package com.example.demo.HotelService;
+
+public interface HotelService {
+	
+	 public List<h> getAllHotel();
+
+	    //Get by id
+	    public Hotel getHotelById(String hotelId);
+
+	    //Create a user
+	    public Hotel saveHotel(Hotel hotel);
+
+}
